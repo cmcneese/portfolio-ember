@@ -1,13 +1,24 @@
 
   <div class="full-page">
-    <nav class="nav-bar">
-
-      <div class="nav-bar__right">
-        <p class="nav-bar__item"><a href="/about">About</a></p>
-        <p class="nav-bar__item"><a href="/">Portfolio</a></p>
-        <p class="nav-bar__item"><a href="/blog">Skills</a></p>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Chris McNeese</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/about">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
     <main class="full-page__content">
       <header class="section section--hero">
@@ -93,6 +104,7 @@
     </main>
     <footer class="lower-nav">
       <ul class="lower-nav__group">
+
         <li class="lower-nav__group--nav-item"><a href="https://www.twitter.com/thechrismcneese">{{fa-icon "twitter"}}</a></li>
         <li class="lower-nav__group--nav-item"><a href="https://www.facebook.com">{{fa-icon "facebook"}}</a></li>
         <li class="lower-nav__group--nav-item"><a href="https://www.github.com/cmcneese">{{fa-icon "github"}}</a></li>
