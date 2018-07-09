@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "broccoli": "^1.1.4",
+    "hoek": "^4.2.1",
     "package-lock.json": "^1.0.0"
   }
 }
