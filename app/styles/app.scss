@@ -40,7 +40,6 @@ $breakpoint-large: 1230px;
     top: 11%;
     left: 3%;
     color: $c-nav-bar-bottom;
-    opaabout: 0;
     visibility: hidden;
   }
   &__img:hover {
@@ -53,7 +52,6 @@ $breakpoint-large: 1230px;
   &:hover {
     .about-picture__caption {
       transition: 2s;
-      opaabout: 1;
       visibility: visible;
     }
   }
