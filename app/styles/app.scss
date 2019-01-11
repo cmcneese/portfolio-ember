@@ -1,9 +1,8 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $c-white: rgba(255, 255, 255, 1);
-$c-nav-bar-top: rgba(45, 62, 79, 1);
 $c-hero-blue: rgba(245, 245, 245, 1);
 $c-nav-bar-bottom: rgba(34, 34, 34, 1);
-$c-blog-red: rgba(229, 77, 66, 1);
+$c-blog-red: rgb(236, 49, 35);
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $breakpoint-tiny: 45rem 75rem;
 $breakpoint-small: 77rem 100rem;
@@ -18,11 +17,10 @@ $breakpoint-large: 1230px;
 @import 'layout';
 
 
-
 .profile-pic {
   width: 100px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 10%;
   border: solid white 2px;
 }
 
@@ -34,7 +32,7 @@ $breakpoint-large: 1230px;
     height: 50%;
     transition: 1s;
     object-fit: cover;
-    filter: grayscale(0%);
+    filter: grayscale(4%);
   }
 
   &__caption {
@@ -42,7 +40,6 @@ $breakpoint-large: 1230px;
     top: 11%;
     left: 3%;
     color: $c-nav-bar-bottom;
-    opaabout: 0;
     visibility: hidden;
   }
   &__img:hover {
@@ -55,7 +52,6 @@ $breakpoint-large: 1230px;
   &:hover {
     .about-picture__caption {
       transition: 2s;
-      opaabout: 1;
       visibility: visible;
     }
   }

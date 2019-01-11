@@ -1,18 +1,32 @@
 <div class="full-page">
-  <nav class="nav-bar">
-    <!-- <h1 class="nav-bar__item nav-bar__item--name">Chris McNeese</h1> -->
-    <div class="nav-bar__right">
-      <p class="nav-bar__item"><a href="/about">About</a></p>
-      <p class="nav-bar__item"><a href="/">Portfolio</a></p>
-      <p class="nav-bar__item"><a href="/blog">Skills</a></p>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
+  <a class="navbar">Chris McNeese</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        {{!-- <a class="nav-link" href="/">Portfolio</a> --}}
+         {{#link-to "index" class="nav-link"}}Portfolio{{/link-to}}
+      </li>
+      <li class="nav-item active">
+         {{#link-to "about" class="nav-link"}}About{{/link-to}}
+      </li>
+      <li class="nav-item">
+         {{#link-to "skills" class="nav-link"}}Skills{{/link-to}}
+      </li>
+       {{!-- {{#link-li}} {{#link-to 'portfolio'}} portfolio {{/link-li}} {{#link-li}} {{#link-to 'about'}} about {{/link-li}} {{#link-li}}
+      {{#link-to 'skills'}} skills {{/link-li}} --}}
+    </ul>
+  </div>
+</nav>
 
   <div class="full-page__content">
     <section class="section section--hero">
         <div class="container">
           <div>
-            <img class="profile-pic" src="/img/ChrisProfile.jpg" alt=""/>
+            <img class="profile-pic" src="/img/MonoProfile.jpg" alt=""/>
           </div>
           <h1 class="hero-tag">Chris McNeese</h1>
         </div>
@@ -22,7 +36,7 @@
   <section class="section">
     <div class="container">
       <h4>About Me</h4>
-      <p> Hello world! I am a web developer and recent graduate of The Iron Yard. The lovely city of Nashville is where I call home. This place, a lot like me, is ever-changing and growing. I am a lover of good coffee, tasty beer, and great music!</p>
+      <p> Hello world! I am a web developer with focus on user experience, or UX. The lovely city of Nashville is where I call home. This place, a lot like me, is ever-changing and growing. I am a lover of good coffee, tasty beer, and great music!</p>
       <p>Staying focused on the long-term vision of providing for my family and striving to make a betterquality of life is a reminder that drives me to never settle for mediocrity, but to keep pressingforward in doing my very best in all I put my hands to.</p>
       <p>I have been able to overcome many tough obstacles in this journey of life through determination and persistance.</p>
       <div class="row">

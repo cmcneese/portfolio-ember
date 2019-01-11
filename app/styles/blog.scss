@@ -21,7 +21,7 @@
 }
 
 .top-box {
-  background: rgba(229, 77, 66, 1.0);
+  background: #AACCFF;
   padding: 1rem;
   position: relative;
 }
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   margin: 2rem;
-  width: calc(100 / 4 - 2rem);
+  flex-wrap: wrap;
 }
 
 .skills-card_item {

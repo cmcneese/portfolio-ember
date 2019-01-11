@@ -1,12 +1,25 @@
 <div class="full-page">
-  <nav class="nav-bar">
-    <!-- <h1 class="nav-bar__item nav-bar__item--name">Chris McNeese</h1> -->
-    <div class="nav-bar__right">
-      <p class="nav-bar__item"><a href="/about">About</a></p>
-      <p class="nav-bar__item"><a href="/">Portfolio</a></p>
-      <p class="nav-bar__item"><a href="/blog">Skills</a></p>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
+  <a class="navbar">Chris McNeese</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <!-- <span class="sr-only">(current)</span> -->
+      <li class="nav-item">
+         {{#link-to "index" class="nav-link"}}Portfolio{{/link-to}}
+        {{!-- <a class="nav-link" href="/portfolio">Portfolio</a> --}}
+      </li>
+      <li class="nav-item">
+         {{#link-to "about" class="nav-link"}}About{{/link-to}}
+      </li>
+      <li class="nav-item active">
+        {{#link-to "skills" class="nav-link"}}Skills{{/link-to}}
+      </li>
+    </ul>
+  </div>
+</nav>
   <section class="section">
     <div class="container">
         <div class="grid">
@@ -15,6 +28,8 @@
               <h2 class="title">MY TOOLBELT</h2>
 
             </div>
+          <div class="">
+
             <div class="skills-card">
               <p class="skills-card_item">HTML5</p>
               <p class="skills-card_item">CSS3</p>
@@ -29,8 +44,13 @@
               <p class="skills-card_item">Vue.js</p>
               <p class="skills-card_item">WordPress</p>
               <p class="skills-card_item">PHP</p>
+              <p class="skills-card_item">Ruby on Rails</p>
+              <p class="skills-card_item">Node.js</p>
+              <p class="skills-card_item">Laravel</p>
+              <p class="skills-card_item">React.js</p>
             </div>
           </div>
+        </div>
 
         </div>
     </div>
