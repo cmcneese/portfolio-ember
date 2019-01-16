@@ -47,6 +47,7 @@
     "broccoli": "^1.1.4",
     "hoek": "^4.2.1",
     "package-lock.json": "^1.0.0",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "yarn.lock": "0.0.1-security"
   }
 }
