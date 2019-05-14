@@ -9,9 +9,7 @@ module.exports = {
     browser: true
   },
   rules: {
-<<<<<<< HEAD
   }
-=======
   },
   overrides: [
     // node files
@@ -35,5 +33,4 @@ module.exports = {
       }
     }
   ]
->>>>>>> 36151c9... message
 };
