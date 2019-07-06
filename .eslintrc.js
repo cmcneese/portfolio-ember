@@ -32,4 +32,6 @@ module.exports = {
         node: true
       }
     }
-  ];
+  ]
+};
+
