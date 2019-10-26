@@ -4,7 +4,7 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  extends: 'defaults',
+  extends: 'eslint:recommended',
   env: {
     browser: true
   },
@@ -34,4 +34,3 @@ module.exports = {
     }
   ]
 };
-
