@@ -7591,6 +7591,11 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+node-bin-setup@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
+  integrity sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
+
 node-fetch-npm@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/node-fetch-npm/-/node-fetch-npm-2.0.2.tgz#7258c9046182dca345b4208eda918daf33697ff7"
@@ -7651,6 +7656,13 @@ node-watch@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/node-watch/-/node-watch-0.6.1.tgz#b9874111ce9f5841b1c7596120206c7b825be0e9"
   integrity sha512-gwQiR7weFRV8mAtT0x0kXkZ18dfRLB45xH7q0hCOVQMLfLb2f1ZaSvR57q4/b/Vj6B0RwMNJYbvb69e1yM7qEA==
+
+node@^12.12.0:
+  version "12.12.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.12.0.tgz#934f1801b3d72887d812092c92a4ed829f290f9d"
+  integrity sha512-O6BktMOYe3MwF7n83L4Nc6/tvlOCYsDntQQegqWUPcH779oQu1krcWPMREUPm8FKSWK7c9LK4Yldk8h3FnSqaw==
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 "nopt@2 || 3", nopt@^3.0.6:
   version "3.0.6"
