@@ -1,26 +1,4 @@
 <div class="full-page">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
-    <a class="navbar">Chris McNeese</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          {{!-- <a class="nav-link" href="/">Portfolio</a> --}}
-          {{#link-to "index" class="nav-link"}}Portfolio{{/link-to}}
-        </li>
-        <li class="nav-item">
-          {{#link-to "about" class="nav-link"}}About{{/link-to}}
-        </li>
-        <li class="nav-item">
-          {{#link-to "skills" class="nav-link"}}Skills{{/link-to}}
-        </li>
-      </ul>
-    </div>
-  </nav>
-
   <main class="full-page__content">
     <header class="section section--hero">
       <div>
@@ -118,14 +96,5 @@
 
     </section>
   </main>
-  <footer class="lower-nav">
-    <ul class="lower-nav__group">
-      <li class="lower-nav__group--nav-item"><a href="https://www.twitter.com/thechrismcneese">{{fa-icon "twitter"}}</a>
-      </li>
-      <li class="lower-nav__group--nav-item"><a href="https://www.github.com/cmcneese">{{fa-icon "github"}}</a></li>
-      <li class="lower-nav__group--nav-item"><a
-          href="https://www.linkedin.com/in/chrismcneese">{{fa-icon "linkedin"}}</a></li>
-    </ul>
-  </footer>
 </div>
 {{outlet}}
