@@ -75,3 +75,15 @@
 .h4 {
   font-size: 1rem;
 }
+
+.etch-link {
+  border: 2px solid $c-hero-blue;
+  color: #fff;
+  background: $c-hero-blue;
+
+  &:hover {
+  border: 2px solid $c-hero-blue;
+  color: $c-hero-blue;
+  background: #fff;
+  }
+}
