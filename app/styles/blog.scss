@@ -78,11 +78,13 @@
 
 .etch-link {
   border: 2px solid $c-hero-blue;
+  border-radius: 4px;
   color: #fff;
   background: $c-hero-blue;
 
   &:hover {
   border: 2px solid $c-hero-blue;
+  border-radius: 4px;
   color: $c-hero-blue;
   background: #fff;
   }
