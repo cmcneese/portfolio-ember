@@ -1,5 +1,5 @@
 .navbar {
-  color: white;
+  color: $c-white;
 }
 
 .lower-nav {
@@ -15,20 +15,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
+  
   &__group {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-width: 22rem;
     margin: 0;
-
-    &--nav-item a {
+  }
+ }
+}
+.nav-link {
       color: $c-white;
       text-decoration: none;
-    }
-  }
+      text-transform: uppercase;
 }
 
 /*Style Nav Links to Right side of Nav Bar*/
