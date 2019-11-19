@@ -30,3 +30,8 @@
     }
   }
 }
+
+/*Style Nav Links to Right side of Nav Bar*/
+.navbar-collapse {
+  justify-content: flex-end;
+}
