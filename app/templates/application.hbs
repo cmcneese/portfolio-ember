@@ -1,30 +1,24 @@
   <div class="full-page">
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
       <a class="name">Chris McNeese</a>
-      {{#burger-menu as |burger|}}
-        {{#burger.menu itemTagName="li" as |menu|}}
-          <button {{action burger.state.actions.close}}>Close</button>
-
-        <ul>
-          {{#menu.item}}
-            {{link-to 'Blog' 'index'}}
-          {{/menu.item}}
-
-          {{#menu.item}}
-            {{link-to 'About' 'about'}}
-          {{/menu.item}}
-
-          {{#menu.item}}
-            {{link-to "skills" 'skills'}}
-           {{/menu.item}} 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            {{#link-to "index" class="nav-link"}}Blog{{/link-to}}
+          </li>
+          <li class="nav-item">
+            {{#link-to "about" class="nav-link"}}About{{/link-to}}
+          </li>
+          <li class="nav-item">
+            {{#link-to "skills" class="nav-link"}}Skills{{/link-to}}
+          </li>
         </ul>
-      {{/burger.menu}}
-
-      {{#burger.outlet}}
-        <button {{action burger.state.actions.toggle}}>Menu</button>
-        {{outlet}}
-      {{/burger.outlet}}
-    {{/burger-menu}}
+      </div>
+    </nav>
     <div class="full-page__content">
       <section class="section section--hero">
         <div class="container">
