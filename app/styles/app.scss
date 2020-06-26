@@ -1,9 +1,9 @@
-$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 $c-white: rgba(255, 255, 255, 1);
-$c-hero-blue: #343A40;
+$c-hero-blue: #343a40;
 $c-nav-bar-bottom: rgba(34, 34, 34, 1);
 $c-blog-red: rgb(236, 49, 35);
-$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 $breakpoint-tiny: 45rem 75rem;
 $breakpoint-small: 77rem 100rem;
 $breakpoint-medium: 992px 1229px;
@@ -11,15 +11,14 @@ $breakpoint-large: 1230px;
 $bm-transition-duration: 0.3s;
 $bm-overlay-background: rgba(0, 0, 0, 0.7);
 
-
 @import 'ember-burger-menu';
+@import 'ember-burger-menu/animations/menu-item/stack';
 @import 'box-sizing';
 @import 'navbar';
 @import 'content';
 @import 'blog';
 @import 'reset';
 @import 'layout';
-
 
 .profile-pic {
   width: 100px;
@@ -46,6 +45,7 @@ $bm-overlay-background: rgba(0, 0, 0, 0.7);
     color: $c-nav-bar-bottom;
     visibility: hidden;
   }
+
   &__img:hover {
     transition: 1s;
     filter: grayscale(100%);
@@ -60,14 +60,13 @@ $bm-overlay-background: rgba(0, 0, 0, 0.7);
     }
   }
 }
+
 /*Style Nav Links to Right side of Nav Bar*/
 .navbar-collapse {
   justify-content: flex-end;
+
   &.show {
     background-color: $c-hero-blue;
     max-width: 100%;
-
   }
 }
-
-

@@ -1,49 +1,49 @@
-  <div class="full-page">
+<div class="full-page">
 
-      <a class="name">Chris McNeese</a>
-      {{#burger-menu as |burger|}}
-        {{#burger.menu itemTagName="li" as |menu|}}
-          <button {{action burger.state.actions.close}}>Close</button>
+  <a class="name">Chris McNeese</a>
+  {{#burger.menu as |burger|}}
 
-        <ul>
-          {{#menu.item}}
-            {{link-to 'Blog' 'index'}}
-          {{/menu.item}}
+  <button {{action burger.state.actions.close}}>Close</button>
 
-          {{#menu.item}}
-            {{link-to 'About' 'about'}}
-          {{/menu.item}}
+  <ul>
+    {{#menu.item}}
+    {{link-to 'Blog' 'index'}}
+    {{/menu.item}}
 
-          {{#menu.item}}
-            {{link-to "skills" 'skills'}}
-           {{/menu.item}} 
-        </ul>
-      {{/burger.menu}}
+    {{#menu.item}}
+    {{link-to 'About' 'about'}}
+    {{/menu.item}}
 
-      {{#burger.outlet}}
-        <button {{action burger.state.actions.toggle}}>Menu</button>
-        {{outlet}}
-      {{/burger.outlet}}
-    {{/burger-menu}}
-    <div class="full-page__content">
-      <section class="section section--hero">
-        <div class="container">
-          <div class="hero-container">
-            <img class="profile-pic" src="/img/MonoProfile.jpg" alt="" />
-          </div>
-            <h1 class="hero-tag">Chris McNeese</h1>
+    {{#menu.item}}
+    {{link-to "skills" 'skills'}}
+    {{/menu.item}}
+  </ul>
+  {{/burger.menu}}
+
+  {{#burger.outlet}}
+  <button {{action burger.state.actions.toggle}}>Menu</button>
+  {{outlet}}
+  {{/burger.outlet}}
+
+  <div class="full-page__content">
+    <section class="section section--hero">
+      <div class="container">
+        <div class="hero-container">
+          <img class="profile-pic" src="/img/MonoProfile.jpg" alt="" />
         </div>
-      </section>
-    </div>
-    {{outlet}}
-    <footer class="lower-nav">
-      <ul class="lower-nav__group">
-        <li class="lower-nav__group--nav-item"><a href="https://www.twitter.com/thechrismcneese"><span
-              class="fa fa-twitter"></span></a></li>
-        <li class="lower-nav__group--nav-item"><a href="https://www.github.com/cmcneese"><span
-              class="fa fa-github"></span></a></li>
-        <li class="lower-nav__group--nav-item"><a href="https://www.linkedin.com/in/chrismcneese"><span
-              class="fa fa-linkedin"></span></a></li>
-      </ul>
-    </footer>
+        <h1 class="hero-tag">Chris McNeese</h1>
+      </div>
+    </section>
   </div>
+  {{outlet}}
+  <footer class="lower-nav">
+    <ul class="lower-nav__group">
+      <li class="lower-nav__group--nav-item"><a href="https://www.twitter.com/thechrismcneese"><span
+            class="fa fa-twitter"></span></a></li>
+      <li class="lower-nav__group--nav-item"><a href="https://www.github.com/cmcneese"><span
+            class="fa fa-github"></span></a></li>
+      <li class="lower-nav__group--nav-item"><a href="https://www.linkedin.com/in/chrismcneese"><span
+            class="fa fa-linkedin"></span></a></li>
+    </ul>
+  </footer>
+</div>
