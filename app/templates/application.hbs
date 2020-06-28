@@ -3,33 +3,33 @@
   <a class="name">Chris McNeese</a>
   {{#burger.menu as |burger|}}
 
-  <button {{action burger.state.actions.close}}>Close</button>
+    <button {{action burger.state.actions.close}}>Close</button>
 
-  <ul>
-    {{#menu.item}}
-    {{link-to 'Blog' 'index'}}
-    {{/menu.item}}
+    <ul>
+      {{#menu.item}}
+        {{link-to "Blog" "index"}}
+      {{/menu.item}}
 
-    {{#menu.item}}
-    {{link-to 'About' 'about'}}
-    {{/menu.item}}
+      {{#menu.item}}
+        {{link-to "About" "about"}}
+      {{/menu.item}}
 
-    {{#menu.item}}
-    {{link-to "skills" 'skills'}}
-    {{/menu.item}}
-  </ul>
+      {{#menu.item}}
+        {{link-to "Skills" "skills"}}
+      {{/menu.item}}
+    </ul>
   {{/burger.menu}}
 
   {{#burger.outlet}}
-  <button {{action burger.state.actions.toggle}}>Menu</button>
-  {{outlet}}
+    <button {{action burger.state.actions.toggle}}>Menu</button>
+    {{outlet}}
   {{/burger.outlet}}
 
   <div class="full-page__content">
     <section class="section section--hero">
       <div class="container">
         <div class="hero-container">
-          <img class="profile-pic" src="/img/MonoProfile.jpg" alt="" />
+          <img class="profile-pic" src="/img/MonoProfile.jpg" alt="">
         </div>
         <h1 class="hero-tag">Chris McNeese</h1>
       </div>
@@ -38,12 +38,21 @@
   {{outlet}}
   <footer class="lower-nav">
     <ul class="lower-nav__group">
-      <li class="lower-nav__group--nav-item"><a href="https://www.twitter.com/thechrismcneese"><span
-            class="fa fa-twitter"></span></a></li>
-      <li class="lower-nav__group--nav-item"><a href="https://www.github.com/cmcneese"><span
-            class="fa fa-github"></span></a></li>
-      <li class="lower-nav__group--nav-item"><a href="https://www.linkedin.com/in/chrismcneese"><span
-            class="fa fa-linkedin"></span></a></li>
+      <li class="lower-nav__group--nav-item">
+        <a href="https://www.twitter.com/thechrismcneese">
+          <span class="fa fa-twitter"></span>
+        </a>
+      </li>
+      <li class="lower-nav__group--nav-item">
+        <a href="https://www.github.com/cmcneese">
+          <span class="fa fa-github"></span>
+        </a>
+      </li>
+      <li class="lower-nav__group--nav-item">
+        <a href="https://www.linkedin.com/in/chrismcneese">
+          <span class="fa fa-linkedin"></span>
+        </a>
+      </li>
     </ul>
   </footer>
 </div>
