@@ -3,8 +3,12 @@ language: node_js
 node_js:
   - "6"
 
+<<<<<<< HEAD
 sudo: false
 dist: trusty
+=======
+dist: xenial
+>>>>>>> e098042... message
 
 addons:
   chrome: stable
