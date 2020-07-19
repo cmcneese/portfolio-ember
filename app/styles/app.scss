@@ -13,12 +13,12 @@ $bm-overlay-background: rgba(0, 0, 0, 0.7);
 
 @import 'ember-burger-menu';
 @import 'ember-burger-menu/animations/menu-item/stack';
-@import '_box-sizing';
-@import '_navbar';
-@import '_content';
-@import '_blog';
-@import '_reset';
-@import '_layout';
+@import 'box-sizing';
+@import 'navbar';
+@import 'content';
+@import 'blog';
+@import 'reset';
+@import 'layout';
 
 .profile-pic {
   width: 100px;
