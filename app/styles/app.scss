@@ -8,11 +8,13 @@ $breakpoint-tiny: 45rem 75rem;
 $breakpoint-small: 77rem 100rem;
 $breakpoint-medium: 992px 1229px;
 $breakpoint-large: 1230px;
-$bm-transition-duration: 0.3s;
-$bm-overlay-background: rgba(0, 0, 0, 0.7);
 
+<<<<<<< HEAD:app/styles/app.scss
 @import 'ember-burger-menu';
 @import 'ember-burger-menu/animations/menu-item/stack';
+=======
+
+>>>>>>> master:app/styles/style.scss
 @import 'box-sizing';
 @import 'navbar';
 @import 'content';

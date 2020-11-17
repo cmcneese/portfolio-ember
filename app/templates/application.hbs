@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="full-page">
 
   <a class="name">Chris McNeese</a>
@@ -22,6 +23,39 @@
 
   {{#burger.outlet}}
     <button {{action burger.state.actions.toggle}}>Menu</button>
+=======
+  <div class="full-page">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
+      <a class="name">Chris McNeese</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            {{#link-to "index" class="nav-link"}}Blog{{/link-to}}
+          </li>
+          <li class="nav-item">
+            {{#link-to "about" class="nav-link"}}About{{/link-to}}
+          </li>
+          <li class="nav-item">
+            {{#link-to "skills" class="nav-link"}}Skills{{/link-to}}
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="full-page__content">
+      <section class="section section--hero">
+        <div class="container">
+          <div class="hero-container">
+            <img class="profile-pic" src="/img/MonoProfile.jpg" alt="" />
+          </div>
+            <h1 class="hero-tag">Chris McNeese</h1>
+        </div>
+      </section>
+    </div>
+>>>>>>> master
     {{outlet}}
   {{/burger.outlet}}
 
