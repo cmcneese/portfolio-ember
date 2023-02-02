@@ -11,6 +11,7 @@
 # misc
 /.env*
 /.sass-cache
+/.eslintcache
 /connect.lock
 /coverage/*
 /.idea/
@@ -20,8 +21,20 @@ yarn-error.log
 testem.log
 
 # ember-try
+<<<<<<< HEAD
 .node_modules.ember-try/
 bower.json.ember-try
 package.json.ember-try
 node_modules
 node_modules
+=======
+/.node_modules.ember-try/
+/bower.json.ember-try
+/npm-shrinkwrap.json.ember-try
+/package.json.ember-try
+/package-lock.json.ember-try
+/yarn.lock.ember-try
+
+# broccoli-debug
+/DEBUG/
+>>>>>>> 9097a7f (message)
