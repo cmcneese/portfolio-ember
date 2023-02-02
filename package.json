@@ -41,7 +41,7 @@
     "ember-cli-sass": "^10.0.1",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
-    "ember-cli-update": "^0.43.7",
+    "ember-cli-update": "^1.0.1",
     "ember-data": "^4.9.1",
     "ember-font-awesome": "^4.0.0-rc.4",
     "ember-load-initializers": "^2.1.2",
