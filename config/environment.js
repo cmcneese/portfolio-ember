@@ -1,15 +1,9 @@
 /* eslint-env node */
 'use strict';
 
-<<<<<<< HEAD
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'portfolio-ember',
-=======
-module.exports = function (environment) {
-  const ENV = {
-    modulePrefix: 'my-app',
->>>>>>> 9097a7f (message)
     environment,
     rootURL: '/',
     locationType: 'history',
